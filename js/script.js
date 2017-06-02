@@ -24,11 +24,24 @@ $(document).ready(function() {
 //    $("#icons>li").hover(fader, fadeBackToFirstElement);
     $("#icons>li").mouseenter(fader);
   
-  //initialize swiper when document ready  
-    var mySwiper = new Swiper ('.swiper-container', {
+/*----- Swiper functions ------*/
+  var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
-      direction: 'vertical',
-      loop: true
-    });
+    direction: 'vertical',
+    slidesPerView: 2,
+    autoHeight: true,
+    setWrapperSize: true,
+    paginationClickable: true,
+    spaceBetween: 15,
+    paginationType: 'bullets',
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    mousewheelControl: true,
+    freeMode: true,
+    freeModeSticky: true,
+    paginationBulletRender: function (swiper, index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+  }
+  });   
 
 });

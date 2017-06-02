@@ -22,6 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
+    <!-- Swiper -->
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/swiper.css">
+
+    
     <?php wp_head();?>
  
   </head>
@@ -70,7 +75,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="intent://send/4912345678#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">
+                      <a class="whatsapp" href="intent://send/4912345678#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">
                         <img src="<?php bloginfo('template_url')?>/icons/whatsapp.svg" alt="WhatsApp">WhatsApp Terminbuchung
                       </a>
                     </li>

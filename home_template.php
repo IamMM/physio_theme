@@ -92,7 +92,49 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
     </div>
     
     <div class="container">
-    <?php echo do_shortcode("[adl-post-slider id='135']"); ?>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        
+        <?php if(have_posts()) : ?>
+        <?php while(have_posts()) : the_post(); ?>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="news-container">
+            <div class="row">
+              <div class="col-md-4">
+                <?php if(has_post_thumbnail()) : ?>
+                  <div class="info-img"><?php the_post_thumbnail(); ?></div>
+                <?php endif; ?>
+              </div>
+              <div class="col-md-6">
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
+              </div>
+              <div class="col-md-1 col-md-offset-1">
+                <div class="btn-container">
+                  <a href ="<?php the_permalink(); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- .swiper-slide -->
+        
+        <?php endwhile; ?>
+        <?php else : ?>
+        <p><?php__('Keine aktuellen Beiträge'); ?></p>
+        <?php endif; ?>
+          ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+<!--      <div class="swiper-button-prev"></div>-->
+<!--      <div class="swiper-button-next"></div>-->
+
+      </div>
     </div>
   </div>
 </div>

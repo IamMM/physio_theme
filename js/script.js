@@ -1,11 +1,12 @@
 $(document).ready(function() {
+    fade_time = 200;
   // main nav dropdown hover fade
   $('.navbar-default .navbar-nav > li.dropdown').hover(
       function() {
-        $('ul.dropdown-menu', this).stop(true, true).fadeIn();
+        $('ul.dropdown-menu', this).stop(true, true).fadeIn(fade_time);
         $(this).addClass('open');
       }, function() {   
-        $('ul.dropdown-menu', this).stop(true, true).fadeOut();
+        $('ul.dropdown-menu', this).stop(true, true).fadeOut(fade_time);
         $(this).removeClass('open');
       }
   );
@@ -15,7 +16,6 @@ $(document).ready(function() {
 
   
   // icons hover info fade
-  fade_time = 200;
   function fader(i){
        $('.hover-info>div').stop().fadeTo(fade_time,0).eq(!i?i:$(this).index()).fadeTo(fade_time,1);
     }
@@ -40,9 +40,9 @@ $(document).ready(function() {
     prevButton: '.button-prev',
     pagination: '.swiper-pagination',
     paginationClickable: true,
-    mousewheelControl: true,
-    freeMode: true,
-    freeModeSticky: true,
+//    mousewheelControl: true,
+//    freeMode: true,
+//    freeModeSticky: true,
     paginationBulletRender: function (swiper, index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }

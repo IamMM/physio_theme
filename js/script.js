@@ -10,6 +10,10 @@ $(document).ready(function() {
       }
   );
   
+  //altenateing container background
+  $('.alternate>div:odd').css("background-color", "rgb(248,248,248)");
+
+  
   // icons hover info fade
   fade_time = 200;
   function fader(i){

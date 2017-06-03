@@ -36,15 +36,15 @@ $(document).ready(function() {
     autoHeight: true,
     setWrapperSize: true,
     paginationClickable: true,
-    spaceBetween: 15,
-    paginationType: 'bullets',
+    spaceBetween: 30,
+    paginationType: 'custom',
     pagination: '.swiper-pagination',
     paginationClickable: true,
     mousewheelControl: true,
     freeMode: true,
     freeModeSticky: true,
-    paginationBulletRender: function (swiper, index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    paginationCustomRender: function (swiper, current, total) {
+      return current + ' / ' + total;
   }
   });   
 

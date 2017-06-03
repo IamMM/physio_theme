@@ -1,3 +1,8 @@
+/*
+  This is the custom css file to style
+  all swiper realted elements.
+*/
+
 .swiper-container {
     width: 100%;
     height: 430px;
@@ -34,6 +39,7 @@
   text-decoration: none;
   color: #fff;
   background-color: #ffba4d;
+  transition: 300ms;
 }
 
 .news-btn {

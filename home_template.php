@@ -109,12 +109,12 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
                 <?php endif; ?>
               </div>
               <div class="col-md-6">
-                <h3><?php the_title(); ?></h3>
-                <p><?php the_excerpt(); ?></p>
+                <h3 style="margin: 40px 0;"><?php the_title(); ?></h3>
+                <p><?php the_field('preview'); ?></p>
               </div>
               <div class="col-md-1 col-md-offset-1">
                 <div class="btn-container">
-                  <a href ="<?php the_permalink(); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
+                  <a href ="<?php the_field('link'); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
                 </div>
               </div>
             </div>

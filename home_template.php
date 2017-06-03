@@ -108,11 +108,11 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
                   <div class="info-img"><?php the_post_thumbnail(); ?></div>
                 <?php endif; ?>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <h3 style="margin: 40px 0;"><?php the_title(); ?></h3>
                 <p><?php the_field('preview'); ?></p>
               </div>
-              <div class="col-md-1 col-md-offset-1">
+              <div class="col-md-1 btn-container">
                 <div class="btn-container">
                   <a href ="<?php the_field('link'); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
                 </div>
@@ -127,12 +127,13 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
         <?php endif; ?>
           ...
       </div>
-      <!-- If we need pagination -->
+        
+      <!-- pagination -->
       <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-<!--      <div class="swiper-button-prev"></div>-->
-<!--      <div class="swiper-button-next"></div>-->
+      <!-- navigation buttons -->
+      <!--<div class="button-prev"><img class="glyphicon-chevron-left" src="<?php bloginfo('template_url')?>/icons/arrow_left.svg"></div>
+      <div class="button-next"><img class="glyphicon-chevron-right" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></div>-->
 
       </div>
     </div>

@@ -37,15 +37,18 @@ $(document).ready(function() {
     setWrapperSize: true,
     paginationClickable: true,
     spaceBetween: 30,
-    paginationType: 'custom',
+//    paginationType: 'custom',
     pagination: '.swiper-pagination',
     paginationClickable: true,
     mousewheelControl: true,
     freeMode: true,
     freeModeSticky: true,
-    paginationCustomRender: function (swiper, current, total) {
-      return current + ' / ' + total;
-  }
+//    paginationCustomRender: function (swiper, current, total) {
+//      return current + ' / ' + total;
+//  }
+    paginationBulletRender: function (swiper, index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
   });   
 
 });

@@ -94,48 +94,49 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
     <div class="container">
       <!-- Slider main container -->
       <div class="swiper-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        
-        <?php if(have_posts()) : ?>
-        <?php while(have_posts()) : the_post(); ?>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="news-container">
-            <div class="row">
-              <div class="col-md-4">
-                <?php if(has_post_thumbnail()) : ?>
-                  <div class="info-img"><?php the_post_thumbnail(); ?></div>
-                <?php endif; ?>
-              </div>
-              <div class="col-md-7">
-                <h3 style="margin: 40px 0;"><?php the_title(); ?></h3>
-                <p><?php the_field('preview'); ?></p>
-              </div>
-              <div class="col-md-1 btn-container">
-                <div class="btn-container">
-                  <a href ="<?php the_field('link'); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <?php if(have_posts()) : ?>
+          <?php while(have_posts()) : the_post(); ?>
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="news-container">
+              <div class="row">
+                <div class="col-md-4">
+                  <?php if(has_post_thumbnail()) : ?>
+                    <div class="info-img"><?php the_post_thumbnail(); ?></div>
+                  <?php endif; ?>
+                </div>
+                <div class="col-md-7">
+                  <h3 style="margin: 40px 0;"><?php the_title(); ?></h3>
+                  <p><?php the_field('preview'); ?></p>
+                </div>
+                <div class="col-md-1 btn-container">
+                  <div class="btn-container">
+                    <a href ="<?php the_field('link'); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div><!-- .swiper-slide -->
-        
-        <?php endwhile; ?>
-        <?php else : ?>
-        <p><?php__('Keine aktuellen Beiträge'); ?></p>
-        <?php endif; ?>
-          ...
-      </div>
-        
-      <!-- pagination -->
-      <div class="swiper-pagination"></div>
+          </div><!-- .swiper-slide -->
 
-      <!-- navigation buttons -->
-      <!--<div class="button-prev"><img class="glyphicon-chevron-left" src="<?php bloginfo('template_url')?>/icons/arrow_left.svg"></div>
-      <div class="button-next"><img class="glyphicon-chevron-right" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></div>-->
-
+          <?php endwhile; ?>
+          <?php else : ?>
+          <p><?php__('Keine aktuellen Beiträge'); ?></p>
+          <?php endif; ?>
+            ...
+        </div><!-- .swiper-wrapper -->
+      </div><!-- .swiper-container -->
+      
+      <div class="swiper-nav">
+        <!-- swiper-pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- swiper navigation -->
+        <div class="button-prev"><img src="<?php bloginfo('template_url')?>/icons/arrow_left.svg"></div>
+        <div class="button-next"><img src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></div>
       </div>
+
     </div>
   </div>
 </div>

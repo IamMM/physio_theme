@@ -33,19 +33,16 @@ $(document).ready(function() {
       // Optional parameters
     direction: 'vertical',
     slidesPerView: 2,
-    autoHeight: true,
-    setWrapperSize: true,
-    paginationClickable: true,
+//    autoHeight: true,
+//    setWrapperSize: true,
     spaceBetween: 30,
-//    paginationType: 'custom',
+    nextButton: '.button-next',
+    prevButton: '.button-prev',
     pagination: '.swiper-pagination',
     paginationClickable: true,
     mousewheelControl: true,
     freeMode: true,
     freeModeSticky: true,
-//    paginationCustomRender: function (swiper, current, total) {
-//      return current + ' / ' + total;
-//  }
     paginationBulletRender: function (swiper, index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }

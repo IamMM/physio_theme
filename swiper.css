@@ -15,12 +15,12 @@
   display: table;
   width: 40px;
   height: 200px;
-  background-color: #ffcc67;
   float: right;
 }
 .info-box-btn {
   display: table-cell;
   text-align: center;
+  background-color: #ffcc67;
   vertical-align: middle;
   height: 100%;
   width: 100%;
@@ -40,17 +40,66 @@
   height: 40px;
 }
 
+.swiper-nav {
+text-align: center;
+  margin: 20px 0;
+}
+
+/* Pagnination */
+.swiper-pagination {
+  margin-top: 10px;
+  position: relative;
+  display: inline
+}
 .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        line-height: 20px;
-        font-size: 12px;
-        color:#000;
-        opacity: 1;
-        background: rgba(0,0,0,0.2);
-    }
-    .swiper-pagination-bullet-active {
-        color:#fff;
-        background: #007aff;
-    }
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color:#000;
+  opacity: 1;
+  background-color: transparent;
+  border-right: 1px solid #545454;
+  border-radius: 0;
+
+}
+
+.swiper-pagination-bullet:last-child {
+  border: none;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 5px;
+  display: inline-block; 
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #ffcc67;
+}
+
+/* Nav Buttons */
+.button-prev,
+.button-next {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #afafaf;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button-prev:hover,
+.button-next:hover {
+  background-color: #ffcc67;
+  transition: 300ms;
+}
+
+.button-prev > img,
+.button-next > img {
+  width: auto;
+  height: inherit;
+  padding: 10%
+}

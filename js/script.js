@@ -33,9 +33,14 @@ $(document).ready(function() {
       // Optional parameters
     direction: 'vertical',
     slidesPerView: 2,
-//    autoHeight: true,
-//    setWrapperSize: true,
     spaceBetween: 30,
+    // Responsive breakpoints
+  breakpoints: {
+    750: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  },
     nextButton: '.button-next',
     prevButton: '.button-prev',
     pagination: '.swiper-pagination',

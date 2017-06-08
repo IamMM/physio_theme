@@ -103,16 +103,16 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
           <div class="swiper-slide">
             <div class="news-container">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                   <?php if(has_post_thumbnail()) : ?>
                     <div class="info-img"><?php the_post_thumbnail(); ?></div>
                   <?php endif; ?>
                 </div>
-                <div class="col-md-7">
+                <div class="col-xs-10 col-sm-7 col-md-7">
                   <h3 style="margin: 40px 0;"><?php the_title(); ?></h3>
                   <p><?php the_field('preview'); ?></p>
                 </div>
-                <div class="col-md-1 btn-container">
+                <div class="col-xs-2 col-sm-1 col-md-1 btn-container">
                   <div class="btn-container">
                     <a href ="<?php the_field('link'); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
                   </div>

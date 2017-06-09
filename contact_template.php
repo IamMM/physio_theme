@@ -7,10 +7,10 @@ Template Name: Map
 <?php get_header();?>
 <div class="container">
     <div class="row box">
-      <div class="col-md-4">
+      <div class="col-md-3">
       <?php the_field('1'); ?>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-9">
       <?php the_field('2'); ?>
       </div>
     </div>

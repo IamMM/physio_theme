@@ -17,7 +17,7 @@ Template Name: Job List
               <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?></a></h1>
             
-            <?php the_content(); ?>
+            <?php the_excerpt() ?>
           </div><!-- /.box -->
     </div>
           <?php endif; ?>

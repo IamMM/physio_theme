@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  
+/*----- Dropdown fade fx functions ------*/
     fade_time = 200;
   // main nav dropdown hover fade
   $('.navbar-default .navbar-nav > li.dropdown').hover(
@@ -15,7 +17,7 @@ $(document).ready(function() {
   $('.alternate>div:odd').css("background-color", "rgb(248,248,248)");
 
   
-  // icons hover info fade
+/*----- Icons hover info fade ------*/
   function fader(i){
        $('.hover-info>div').stop().fadeTo(fade_time,0).eq(!i?i:$(this).index()).fadeTo(fade_time,1);
     }
@@ -51,6 +53,5 @@ $(document).ready(function() {
     paginationBulletRender: function (swiper, index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
-  });   
-
+  });
 });

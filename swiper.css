@@ -3,9 +3,30 @@
   all swiper realted elements.
 */
 
+@media (min-width: 798px) {
+  .swiper-container {
+    height: 390px;
+  }
+  
+  .news-container,
+  .btn-container {
+    height: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-container {
+    height: 470px;
+  }
+  
+  .news-container,
+  .btn-container {
+    height: 220px;
+  }
+}
+
 .swiper-container {
     width: 90%;
-    height: 470px;
 }
 
 .swiper-slide {
@@ -13,9 +34,6 @@
   overflow-y: hidden;
 }
 
-.news-container{
-  height: 220px;
-}
 .info-img {
   height: 100%;
   width: 100%; 

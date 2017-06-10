@@ -103,10 +103,10 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
           <div class="swiper-slide">
             <div class="news-container">
               <div class="row" style="height: 100%">
-                <div class="col-xs-12 col-sm-5 col-md-4" style="height: 100%">
+                <div class="col-xs-12 col-sm-5 col-md-5" style="height: 100%">
                     <div class="info-img" style="background-image: url(<?php the_field('img');  ?>"></div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-7 col-md-offset-0">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0">
                   <h3 style="margin: 40px 0 20px 0;"><?php the_title(); ?></h3>
                   <p><?php the_field('preview'); ?></p>
                 </div>

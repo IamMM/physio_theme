@@ -4,16 +4,17 @@
 */
 
 .swiper-container {
-    width: 100%;
-    height: 430px;
+    width: 90%;
+    height: 470px;
 }
 
 .swiper-slide {
   background-color: #fff;
+  overflow-y: hidden;
 }
 
 .news-container{
-  height: 200px;
+  height: 220px;
 }
 .info-img {
   height: 100%;
@@ -22,8 +23,8 @@
 }
 .btn-container {
   display: table;
-  max-width: 75px;
-  height: 200px;
+  max-width: 100%;
+  height: 100%;
   float: right;
 }
 .info-box-btn {

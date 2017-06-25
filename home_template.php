@@ -19,13 +19,13 @@ Template Name: Startseite
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="<?php bloginfo('template_url'); ?>/img/welcome.jpg" alt="Eingangsbereich">
+      <?php the_field('carousel1',$post_id); ?>
     </div>
     <div class="item">
-      <img src="<?php bloginfo('template_url'); ?>/img/placeholder_1200x400.png" alt="...">
+      <?php the_field('carousel2',$post_id); ?>
     </div>
     <div class="item">
-      <img src="<?php bloginfo('template_url'); ?>/img/placeholder_1200x400.png" alt="...">
+      <?php the_field('carousel3',$post_id); ?>
     </div>
   </div>
   

@@ -31,11 +31,11 @@ Template Name: Startseite
   
   <!-- Controls -->
   <a class="left carousel-control" href="#welcome-carousel" role="button" data-slide="prev">
-    <img class="glyphicon-chevron-left" src="<?php bloginfo('template_url')?>/icons/arrow_left.svg">
+    <img class="chevron-left" src="<?php bloginfo('template_url')?>/icons/arrow_left.svg">
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#welcome-carousel" role="button" data-slide="next">
-    <img class="glyphicon-chevron-right" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg">
+    <img class="chevron-right" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg">
     <span class="sr-only">Next</span>
   </a>
 </div>

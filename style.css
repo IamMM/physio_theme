@@ -395,6 +395,20 @@ a:hover, a:focus {
   background-color: #ffcc67;
 }
 
+.chevron-right,
+.chevron-left {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.chevron-right {
+  right: 50%;
+}
+
 /*
  * Override Bootstrap's default container.
  */
@@ -430,5 +444,13 @@ a:hover, a:focus {
   
   .list-inline {
     margin-left: 0;
+  }
+  
+  .chevron-right,
+  .chevron-left {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
   }
 }

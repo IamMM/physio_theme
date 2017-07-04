@@ -80,22 +80,8 @@ a:hover, a:focus {
 .box {
   padding: 50px 0;
 }
-
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1400px) {
-  #welcome-carousel {
-    width: 1200px;
-    margin: 20px auto 0 auto;
-  }
+.mobile-opening-hours {
+  display: inline-block;
 }
 
 /*
@@ -135,14 +121,14 @@ a:hover, a:focus {
   font-weight: lighter;
   display: none;
 }
-#icons img {
+.icon img {
   width: 30px;
   height: auto;
   display: inline-block;
   margin: 0 5px;
 }
 
-#icons a {
+.icon a {
   color: #545454;
   font-size: 10px;
   text-transform: uppercase;
@@ -151,12 +137,12 @@ a:hover, a:focus {
 }
 
 
-#icons img path {
+.icon img path {
   fill: red;
 }
 
-#icons img:hover,
-#icons a:hover{
+.icon img:hover,
+.icon a:hover{
   stroke: #ffcc67;
   color: #ffcc67;
   text-decoration: none;
@@ -407,4 +393,42 @@ a:hover, a:focus {
 }
 .carousel-indicators .active{
   background-color: #ffcc67;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #welcome-carousel {
+    width: 1200px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .navbar {
+    width: 800px;
+    margin-left: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .icon {
+    margin-top: 10px;
+  }
+  
+  .blog-header {
+    margin: 0;
+  }
+  
+  .list-inline {
+    margin-left: 0;
+  }
 }

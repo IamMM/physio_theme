@@ -16,7 +16,7 @@ add_action('after_setup_theme', 'theme_setup');
 
   // Filter the except length
   function wpdocs_custom_excerpt_length() {
-    return 200;
+    return 50;
   }
   add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length');
   

@@ -53,7 +53,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <ul class="list-inline">
+                  <ul id="icons" class="list-inline">
                     <li class="icon">
                       <a href="tel:03076764882">
                         <img src="<?php bloginfo('template_url')?>/icons/phone.svg" alt="Telefonnummer"><span class="hidden-xs">Telefon</span>

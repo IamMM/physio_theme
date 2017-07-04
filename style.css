@@ -121,14 +121,14 @@ a:hover, a:focus {
   font-weight: lighter;
   display: none;
 }
-.icon img {
+#icons img {
   width: 30px;
   height: auto;
   display: inline-block;
   margin: 0 5px;
 }
 
-.icon a {
+#icons a {
   color: #545454;
   font-size: 10px;
   text-transform: uppercase;
@@ -137,12 +137,12 @@ a:hover, a:focus {
 }
 
 
-.icon img path {
+#icons img path {
   fill: red;
 }
 
-.icon img:hover,
-.icon a:hover{
+#icons img:hover,
+#icons a:hover{
   stroke: #ffcc67;
   color: #ffcc67;
   text-decoration: none;

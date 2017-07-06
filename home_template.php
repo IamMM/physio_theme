@@ -45,7 +45,7 @@ Template Name: Startseite
 </div>
 
 <div class="container box">
-  <h1 class="uppercase"><?php the_field('heading',$post_id); ?></h1>
+  <h2 class="uppercase"><?php the_field('heading',$post_id); ?></h3>
   <hr class="orange-divider"/>
   <div class="centred">
     <p><?php the_field('text1', $pos_id); ?></p>
@@ -88,7 +88,7 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
 
 <div class="container-fluid grey box">
   <div class="container">
-    <h1 class="uppercase">Aktuelles</h1>
+    <h2 class="uppercase">Aktuelles</h1>
     <hr class="orange-divider"/>
     <div class="centred" style="margin-bottom: 20px;">
       <p>Was gibt es neues bei <i>W. Richter Physiotherapeuten?</i></p>

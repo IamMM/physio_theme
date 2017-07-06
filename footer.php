@@ -2,25 +2,25 @@
     <div class="container-fluid top-footer hidden-xs">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+         <div class="col-sm-6 col-md-3">
             <p>
               W. Richter<br/>
               Physiotherapeuten
             </p> 
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3">
             <p>
               Tel: 030 / 76 76 488-2 <br/>
-              E-Mail: wpphysio@web.de
+              E-Mail: kontakt@wanja-richter.de
             </p>  
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3">
             <p>
               Karl-Marx-Str. 188<br/>
               12043 Berlin
             </p>
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3">
             <p>
               Mo-Fr 8:00 - 21:00 Uhr<br/>
               Sa 8:00 - 18:00 Uhr

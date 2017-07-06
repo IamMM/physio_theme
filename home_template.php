@@ -14,6 +14,7 @@ Template Name: Startseite
     <li data-target="#welcome-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#welcome-carousel" data-slide-to="1"></li>
     <li data-target="#welcome-carousel" data-slide-to="2"></li>
+    <li data-target="#welcome-carousel" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -26,6 +27,9 @@ Template Name: Startseite
     </div>
     <div class="item">
       <img src="<?php the_field('carousel3'); ?>">
+    </div>
+    <div class="item">
+      <img src="<?php the_field('carousel4'); ?>">
     </div>
   </div>
   

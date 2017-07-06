@@ -47,8 +47,8 @@
                   <div class="hover-info">
                     <div> <p>030 / 76 76 488 - 2 <small> Bei Fragen sind wir für Sie da.</small></p></div>
                     <div> <p>Karl-Marx-Straße 188, 12043 Berlin</p></div>
-                    <div> <p>Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p></div>
                     <div> <p>kontakt@wanja-richter.de</p></div>
+                    <div> <p>Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p></div>
                     <div> <p>+49 0157 / 345 6789 <small> Terminbuchen über den WhatsApp Chat</small></p></div>
                   </div>
                 </div>

@@ -38,7 +38,7 @@ $(document).ready(function() {
     spaceBetween: 30,
     // Responsive breakpoints
   breakpoints: {
-    750: {
+    768: {
       slidesPerView: 1,
       spaceBetween: 10
     }

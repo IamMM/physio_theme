@@ -3,28 +3,6 @@
   all swiper realted elements.
 */
 
-@media (min-width: 798px) {
-  .swiper-container {
-    height: 390px;
-  }
-  
-  .news-container,
-  .btn-container {
-    height: 180px;
-  }
-}
-
-@media (min-width: 992px) {
-  .swiper-container {
-    height: 470px;
-  }
-  
-  .news-container,
-  .btn-container {
-    height: 220px;
-  }
-}
-
 .swiper-container {
     width: 90%;
 }
@@ -34,11 +12,23 @@
   overflow-y: hidden;
 }
 
+.img-col {
+  height: 100%;
+}
+
 .info-img {
   height: 100%;
   width: 100%; 
   background-size: cover;
 }
+
+.swiper-title {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: left;
+  margin: 40px 0 20px 0;
+}
+
 .btn-container {
   display: table;
   max-width: 100%;
@@ -131,4 +121,47 @@ text-align: center;
   width: auto;
   height: inherit;
   padding: 10%
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .swiper-container {
+    height: 490px;
+  }
+  
+  .img-col {
+    height: 200px;
+    width: 100%; 
+  }
+
+  .btn-container {
+    float: right;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container {
+    height: 390px;
+  }
+  
+  .news-container,
+  .btn-container {
+    height: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-container {
+    height: 470px;
+  }
+  
+  .news-container,
+  .btn-container {
+    height: 220px;
+  }
 }

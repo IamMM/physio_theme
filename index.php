@@ -61,7 +61,7 @@
    <hr class="left-divider"/>
     <div class="grey">
             <?php the_post_thumbnail(); ?>
-            <p style="padding: 10px;"><?php the_excerpt(); ?></p>
+            <p style="padding: 10px;"><?php my_excerpt('short'); ?></p>
     </div>
     <?php endwhile;
 

@@ -351,10 +351,7 @@ a:hover, a:focus {
 
 .blog-footer {
   color: #fff;
-  text-transform: uppercase;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
+  /*text-transform: uppercase;*/
 }
 
 .top-footer {

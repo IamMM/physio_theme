@@ -11,7 +11,7 @@
           <div class="col-sm-6 col-md-3">
             <p>
               Tel: 030 / 76 76 488-2 <br/>
-              E-Mail: kontakt@wanja-richter.de
+              kontakt@wanja-richter.de
             </p>  
           </div>
           <div class="col-sm-6 col-md-3">

@@ -51,8 +51,8 @@
    
     <div class="col-sm-3 offset-sm-1 blog-sidebar">
     <?php
-    $current = get_posts( array( 'posts_per_page' => 1, 'pagename' => get_query_var('pagename') ) );
-    query_posts(array('orderby' => 'rand', 'showposts' => 1, 'post_type' => 'page', 'category_name'  => 'Leistung', 'post__not_in', $current));
+    $current = array (get_the_ID());
+    query_posts(array('orderby' => 'rand', 'showposts' => 1, 'post_type' => 'page', 'category_name'  => 'Leistung', 'post__not_in' => $current ));
     if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 

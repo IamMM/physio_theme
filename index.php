@@ -48,13 +48,24 @@
 		<?php endif; ?>
             
     </div><!-- /.blog-post -->
+   
     <div class="col-sm-3 offset-sm-1 blog-sidebar">
-      <h4 style="text-align: left;">PERSONAL<span style="color:#ffcc67"> TRAINING</span></h4>
-      <hr class="left-divider"/>
-        <div class="grey">
+    <?php
+    $current = get_posts( array( 'posts_per_page' => 1, 'pagename' => get_query_var('pagename') ) );
+    query_posts(array('orderby' => 'rand', 'showposts' => 1, 'post_type' => 'page', 'category_name'  => 'Leistung', 'post__not_in', $current));
+    if (have_posts()) :
+    while (have_posts()) : the_post(); ?>
+
+   <h4 class="uppercase" style="text-align: left;"><?php the_title(); ?></h4>
+
+   <hr class="left-divider"/>
+    <div class="grey">
             <?php the_post_thumbnail(); ?>
-            <p style="padding: 10px;">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
+            <p style="padding: 10px;"><?php the_excerpt(); ?></p>
+    </div>
+    <?php endwhile;
+
+    endif; ?>
           
     </div><!-- /.blog-sidebar -->
   </div><!-- row -->

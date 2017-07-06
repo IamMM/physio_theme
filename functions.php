@@ -31,5 +31,22 @@ add_action('after_setup_theme', 'theme_setup');
       return $output . '<p><a href="'. get_permalink() . '">' . 'Weiter zur Anzeige...' . '</a></p>';
   }
   add_filter('get_the_excerpt', 'new_excerpt_more');
+
+  // Tags and Category for pages
+  // add tag and category support to pages
+function tags_categories_support_all() {
+  register_taxonomy_for_object_type('post_tag', 'page');
+  register_taxonomy_for_object_type('category', 'page');  
+}
+
+// ensure all tags and categories are included in queries
+function tags_categories_support_query($wp_query) {
+  if ($wp_query->get('tag')) $wp_query->set('post_type', 'any');
+  if ($wp_query->get('category_name')) $wp_query->set('post_type', 'any');
+}
+
+// tag and category hooks
+add_action('init', 'tags_categories_support_all');
+add_action('pre_get_posts', 'tags_categories_support_query');
   
 ?>

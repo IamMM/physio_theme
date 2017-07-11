@@ -3,8 +3,17 @@
 <div class="container">
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
+     
+     <div class="row" style="padding-top: 20px;">
+       <div class="hidden-xs col-md-4 col-md-offset-8">
+         <?php $parent_title = get_the_title($post->post_parent); ?>
+        <h4 style="text-align: left; text-transform: uppercase;"><?php echo $parent_title; ?></h4>
+        <hr class="left-divider"/>
+       </div>
+       
+     </div>
       
-  <div class="row" style="padding: 20px 0;"> <!-- img with sub nav -->
+  <div class="row"> <!-- img with sub nav -->
     <div class="col-md-8 blog-main">
       <?php if(has_post_thumbnail()) : ?>
         <div class="head-img"> <?php the_post_thumbnail(); ?></div>
@@ -12,11 +21,7 @@
     </div>
           
     <div class="hidden-xs col-md-4 blog-sidebar">
-      <div>
-        <?php $parent_title = get_the_title($post->post_parent); ?>
-        <h4 style="text-align: left; text-transform: uppercase;"><?php echo $parent_title; ?></h4>
-        <hr class="left-divider"/>
-        
+      <div>        
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav side-nav">
             <?php

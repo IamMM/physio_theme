@@ -54,7 +54,7 @@
             
     </div><!-- /.blog-post -->
    
-    <div class="col-sm-3 offset-sm-1 blog-sidebar">
+    <div class="col-sm-4 blog-sidebar">
     <?php
     $current = array (get_the_ID());
     query_posts(array('orderby' => 'rand', 'showposts' => 1, 'post_type' => 'page', 'category_name'  => 'Leistung', 'post__not_in' => $current ));

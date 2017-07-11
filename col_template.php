@@ -9,10 +9,15 @@ Template Name: Zeilen
 <!-- START THE FEATURETTES -->
 <div class="container-fluid box">
   <div class="container">
+   <div class="row">
+     <div class="col-md-6 col-md-offset-6">
+       <h4 style="text-align: left;"><?php the_field('black1'); ?><span style="color:#ffcc67"><?php the_field('orange1'); ?></span></h4>
+        <hr class="left-divider"/>
+     </div>
+   </div>
     <div class="row featurette">
       <div class="col-md-6 col-md-push-6">
-        <h4 style="text-align: left;"><?php the_field('black1'); ?><span style="color:#ffcc67"><?php the_field('orange1'); ?></span></h4>
-        <hr class="left-divider"/>
+        
         <p><?php the_field('text1'); ?></p>
       </div>
       <div class="col-md-6 col-md-pull-6">
@@ -23,10 +28,14 @@ Template Name: Zeilen
 </div>
 <div class="container-fluid grey box">
   <div class="container">
+   <div class="row">
+     <div class="col-md-6">
+       <h4 style="text-align: left;"><?php the_field('black2'); ?><span style="color:#ffcc67"><?php the_field('orange2'); ?></span></h4>
+        <hr class="left-divider"/>
+     </div>
+   </div>
     <div class="row featurette">
       <div class="col-md-6">
-        <h4 style="text-align: left;"><?php the_field('black2'); ?><span style="color:#ffcc67"><?php the_field('orange2'); ?></span></h4>
-        <hr class="left-divider"/>
         <p><?php the_field('text2'); ?></p>
       </div>
       <div class="col-md-6">

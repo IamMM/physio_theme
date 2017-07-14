@@ -106,15 +106,15 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="news-container">
-              <div class="row" style="height: 100%">
-                <div class="img-col col-xs-12 col-sm-5 col-md-5">
+              <div class="row" style="height: 100%; margin: 0;">
+                <div class="img-col col-xs-12 col-sm-5 col-md-5" style="padding:0;">
                     <div class="info-img" style="background-image: url(<?php the_field('img');  ?>"></div>
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0">
                   <h3 class ="swiper-title"><?php the_title(); ?></h3>
                   <p><?php the_field('preview'); ?></p>
                 </div>
-                <div class="col-xs-12 col-sm-1 col-md-1 btn-container">
+                <div class="col-xs-12 col-sm-1 col-md-1 btn-container" style="padding: 0;">
                   <div class="btn-container">
                     <a href ="<?php the_field('link'); ?>" type="button" class="info-box-btn" ><img class="news-btn" src="<?php bloginfo('template_url')?>/icons/arrow_right.svg"></a>
                   </div>

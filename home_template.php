@@ -91,7 +91,7 @@ $wp_query = new WP_Query(); $wp_query->query('posts_per_page=8' . '&paged='.$pag
     <h2 class="uppercase">Aktuelles</h1>
     <hr class="orange-divider"/>
     <div class="centred" style="margin-bottom: 20px;">
-      <p>Was gibt es Neues bei <i>W. Richter Physiotherapeuten?</i></p>
+      <p>Was gibt es Neues bei W. Richter Physiotherapeuten?</p>
       <p>Hier finden Sie aktuelle Informationen rund um unsere Praxen:</p>
     </div>
     

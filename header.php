@@ -49,38 +49,41 @@
                     <div> <p>Karl-Marx-Straße 188, 12043 Berlin</p></div>
                     <div> <p>kontakt@wanja-richter.de</p></div>
                     <div> <p>Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p></div>
-                    <div> <p>+49 0157 / 345 6789 <small> Terminbuchen über den WhatsApp Chat</small></p></div>
+                    <div> <p>+49 157 / 345 6789 <small> Terminbuchen über den WhatsApp Chat</small></p></div>
                   </div>
                 </div>
                 <div class="row">
                   <ul id="icons" class="list-inline">
                     <li class="icon">
                       <a href="tel:03076764882">
-                        <img src="<?php bloginfo('template_url')?>/icons/phone.svg" alt="Telefonnummer"><span class="hidden-xs">Telefon</span>
+                        <img src="<?php bloginfo('template_url')?>/icons/phone.svg" alt="Telefonnummer"><span class="hidden-xs hidden-sm">Telefon</span>
                       </a>
                     </li>
                     <li class="icon">
                       <a href="https://www.google.de/maps/place/W.+Richter+Physiotherapeuten/@52.47333,13.4383124,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84f9f7b3f68e5:0xeabfb16095a4e7dc!8m2!3d52.47333!4d13.4405011" target="_blank">
-                        <img src="<?php bloginfo('template_url')?>/icons/adress.svg" alt="Adresse"><span class="hidden-xs">Adresse</span>
+                        <img src="<?php bloginfo('template_url')?>/icons/adress.svg" alt="Adresse"><span class="hidden-xs hidden-sm">Adresse</span>
                       </a>
                     </li>
                     <li class="icon">
                       <a href="mailto:kontakt@wanja-richter.de">
-                        <img src="<?php bloginfo('template_url')?>/icons/email.svg" alt="Email"><span class="hidden-xs">E-Mail</span>
+                        <img src="<?php bloginfo('template_url')?>/icons/email.svg" alt="Email"><span class="hidden-xs hidden-sm">E-Mail</span>
                       </a>
                     </li>
-                    <li class="icon">
+                    <li class="icon hidden-xs">
                       <a href="<?php bloginfo('blog_url')?>/kontakt">
-                        <img src="<?php bloginfo('template_url')?>/icons/open.svg" alt="Öffnungszeiten"><span class="hidden-xs">Öffnungszeiten</span>
+                        <img src="<?php bloginfo('template_url')?>/icons/open.svg" alt="Öffnungszeiten"><span class=" hidden-xs hidden-sm">Öffnungszeiten</span>
                         <p class="visible-xs-inline">Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p>
                       </a>
                     </li>
                     <li class="icon">
-                      <a class="whatsapp hidden-sm hidden-xs" href="intent://send/4912345678#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end">
-                        <img src="<?php bloginfo('template_url')?>/icons/whatsapp.svg" alt="WhatsApp">WhatsApp Terminbuchung
+                      <a class="whatsapp" href=" https://api.whatsapp.com/send?phone=491573456789&text=Hallo,%20ich%20möchte%20gerne%20ein%20Termin%20bei%20Ihnen.">
+                        <img src="<?php bloginfo('template_url')?>/icons/whatsapp.svg" alt="WhatsApp"><span class="hidden-xs hidden-sm">WhatsApp Terminbuchung</span>
                       </a>
                     </li>
                   </ul>
+                  <div class="container visible-xs">
+                    <p>Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p>
+                  </div>
                 </div>
               </div>
             </div>

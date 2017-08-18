@@ -102,9 +102,9 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand sr-only" href="<?php bloginfo('url'); ?>">
-                <?php bloginfo('name'); ?>
-            </a>
+            <!--<a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                <?php wp_title(); ?>
+            </a>-->
           <?php
             wp_nav_menu( array(
                 'menu'              => 'primary',

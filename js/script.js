@@ -1,15 +1,26 @@
 $(document).ready(function() {
   
+  function isMobile() {
+    var bps = 768;
+    var w = $(window).width();
+    return w <= bps
+}
+  
 /*----- Dropdown fade fx functions ------*/
     fade_time = 200;
   // main nav dropdown hover fade
+  
   $('.navbar-default .navbar-nav > li.dropdown').hover(
       function() {
+        if(!isMobile()) {
         $('ul.dropdown-menu', this).stop(true, true).fadeIn(fade_time);
         $(this).addClass('open');
+        }
       }, function() {   
+        if(!isMobile()) {
         $('ul.dropdown-menu', this).stop(true, true).fadeOut(fade_time);
         $(this).removeClass('open');
+        }
       }
   );
   

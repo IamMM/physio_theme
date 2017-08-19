@@ -45,8 +45,8 @@
     </div>
   </div><!-- row for heading -->
   
-  <div class="row blog-post">
-    <div class="col-sm-8">
+  <div class="row">
+    <div class="col-sm-8 blog-post">
         <?php the_content();?>
         <?php endwhile; ?>
         <?php get_template_part( 'content', 'none' ); ?>
@@ -54,7 +54,7 @@
             
     </div><!-- /.blog-post -->
    
-    <div class="col-sm-4 blog-sidebar">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 blog-sidebar">
     <?php
     $current = array (get_the_ID());
     query_posts(array('orderby' => 'rand', 'showposts' => 1, 'post_type' => 'page', 'category_name'  => 'Leistung', 'post__not_in' => $current ));

@@ -467,4 +467,8 @@ a:hover, a:focus {
     background-color: #ffcc67;
   }
   
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+}
+  
 }

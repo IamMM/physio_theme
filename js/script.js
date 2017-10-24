@@ -50,6 +50,7 @@ $(document).ready(function() {
     // Responsive breakpoints
   breakpoints: {
     768: {
+      direction: 'horizontal',
       slidesPerView: 1,
       spaceBetween: 10
     }

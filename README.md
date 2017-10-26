@@ -1,4 +1,4 @@
-# Wordpress Template Physio-theme
+# Wordpress Template "Physio Theme"
 
 ### Design
 spreekult  
@@ -18,7 +18,7 @@ Wanja Richter
 
 ## Import der Advanced Custom Fields
 
-advanced-custom-fields.xml in root directory
+advanced-custom-field-export.xml in root directory
 
 1. Wählen Sie die Felder-Gruppen aus der Liste und wählen Sie "XML exportieren"
 2. Speichern Sie die .xml-Datei bei Nachfrage

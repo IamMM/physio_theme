@@ -34,7 +34,7 @@
   <body>
       <div class='container blog-header'>
             <div class="row">
-              <div class="col-sm-3">
+              <div class="col-sm-4">
                 <div id="logo">
                   <a href="/" class="home-link">
                     <h1 class="blog-title"><?php bloginfo('name')?></h1>
@@ -42,7 +42,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm-8 col-sm-offset-1 ">
+              <div class="col-sm-6 col-sm-offset-2">
                 <div class="row hidden-xs">
                   <div class="hover-info">
                     <div> <p>030 / 76 76 488 - 2 <small> Bei Fragen sind wir für Sie da.</small></p></div>

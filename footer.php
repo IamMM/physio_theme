@@ -50,9 +50,14 @@
         ?>
           </div>
           <div class="col-md-5 col-md-offset-1">
-            <p>&copy;2020 WANJA RICHTER PHYSIOTHERAPEUTEN
+            <p>&copy; WANJA RICHTER PHYSIOTHERAPEUTEN
       <p>
           </div>
+        </div>
+        <div class="row">
+         <div class="col-sm-12" style="text-transform: none; font-size: 0.8em;">
+           <?php echo do_shortcode('[rcb-consent type="change" tag="a" text="Privatsphäre-Einstellungen ändern"]')?>
+         </div>
         </div>
       </div>  
     </div>

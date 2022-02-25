@@ -49,7 +49,6 @@
                     <div> <p>Karl-Marx-Straße 188, 12043 Berlin</p></div>
                     <div> <p>kontakt@wanja-richter.de</p></div>
                     <div> <p>Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p></div>
-                    <div> <p>+49 157 / 345 6789 <small> Terminbuchen über den WhatsApp Chat</small></p></div>
                   </div>
                 </div>
                 <div class="row">
@@ -73,11 +72,6 @@
                       <a href="<?php bloginfo('blog_url')?>/kontakt">
                         <img src="<?php bloginfo('template_url')?>/icons/open.svg" alt="Öffnungszeiten"><span class=" hidden-xs hidden-sm">Öffnungszeiten</span>
                         <p class="visible-xs-inline">Mo-Fr 8:00 - 21:00 Uhr | Sa 8:00 - 18:00 Uhr</p>
-                      </a>
-                    </li>
-                    <li class="icon">
-                      <a class="whatsapp" href=" https://api.whatsapp.com/send?phone=491573456789&text=Hallo,%20ich%20möchte%20gerne%20ein%20Termin%20bei%20Ihnen.">
-                        <img src="<?php bloginfo('template_url')?>/icons/whatsapp.svg" alt="WhatsApp"><span class="hidden-xs hidden-sm">WhatsApp Terminbuchung</span>
                       </a>
                     </li>
                   </ul>

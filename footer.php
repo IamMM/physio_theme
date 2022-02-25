@@ -50,7 +50,7 @@
         ?>
           </div>
           <div class="col-md-5 col-md-offset-1">
-            <p>&copy;2017 WANJA RICHTER PHYSIOTHERAPEUTEN
+            <p>&copy;2020 WANJA RICHTER PHYSIOTHERAPEUTEN
       <p>
           </div>
         </div>

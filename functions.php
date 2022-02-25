@@ -28,7 +28,7 @@ add_action('after_setup_theme', 'theme_setup');
 
   // Filter the excerpt "read more" link.
   function new_excerpt_more($output) {
-      return $output . '<p><a href="'. get_permalink() . '">' . 'Weiter zur Anzeige...' . '</a></p>';
+      return $output . '<p><a href="'. get_permalink() . '">' . 'weiter lesen...' . '</a></p>';
   }
   add_filter('get_the_excerpt', 'new_excerpt_more');
 

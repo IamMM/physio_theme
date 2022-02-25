@@ -61,12 +61,12 @@
     if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 
-   <h4 class="uppercase" style="text-align: left;"><?php the_title(); ?></h4>
-
-   <hr class="left-divider"/>
     <div class="grey">
-            <?php the_post_thumbnail(); ?>
-            <p style="padding: 10px;"><?php my_excerpt('short'); ?></p>
+		<p> Außerdem bei uns: </p>
+   		<h4 class="uppercase" style="text-align: left;"><?php the_title(); ?></h4>
+   		<hr class="left-divider"/>
+        <?php the_post_thumbnail(); ?>
+        <p style="padding: 10px;"><?php my_excerpt('short'); ?></p>
     </div>
     <?php endwhile;
 

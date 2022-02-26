@@ -12,9 +12,8 @@
     <title><?php bloginfo('name'); ?> | 
         <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
-
+    <!-- Bootstrap 3.3.7 core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
       

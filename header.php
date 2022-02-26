@@ -22,7 +22,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- Swiper -->
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"/>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/swiper.css">
 
     
